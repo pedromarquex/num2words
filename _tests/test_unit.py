@@ -35,6 +35,18 @@ class TestNum2Words(unittest.TestCase):
                          'cento e vinte reais e dois centavos')
         self.assertEqual(converter.perform_convert('121,02'),
                          'cento e vinte e um reais e dois centavos')
+        self.assertEqual(converter.perform_convert('999,99'),
+                         'novecentos e noventa e nove reais e noventa e nove centavos')
+        self.assertEqual(converter.perform_convert('9999,99'),
+                         'nove mil novecentos e noventa e nove reais e noventa e nove centavos')
+        self.assertEqual(converter.perform_convert('1999,99'),
+                         'mil novecentos e noventa e nove reais e noventa e nove centavos')
+        self.assertEqual(converter.perform_convert('9999,99'),
+                         'nove mil novecentos e noventa e nove reais e noventa e nove centavos')
+        self.assertEqual(converter.perform_convert('99999,99'),
+                         'noventa e nove mil novecentos e noventa e nove reais e noventa e nove centavos')
+        self.assertEqual(converter.perform_convert('999999,99'),
+                         'novecentos e noventa e nove mil novecentos e noventa e nove reais e noventa e nove centavos')
 
 
 if __name__ == '__main__':
