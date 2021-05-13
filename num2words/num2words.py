@@ -1,6 +1,6 @@
 class NumToWords:
     def __init__(self):
-        self.low_numwords = ['', 'um', 'dois', 'três', 'quatro', 'cinco',
+        self.low_numwords = ['', 'um', 'dois', 'tres', 'quatro', 'cinco',
                              'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze',
                              'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove']
         self.dozens = ['', '', 'vinte', 'trinta', 'quarenta', 'cinquenta',
